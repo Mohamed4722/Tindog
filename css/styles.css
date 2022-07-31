@@ -1,0 +1,231 @@
+/* rappel : un ordi environ 1200*264px
+tablette 880*264 px
+mobile plus petit
+
+
+REGLES FONDAMENTALES : code lisible et modulable (on privilégie une classe par élément)
+
+on peut faire h1, h2, h3 {
+font-family: Montserrat;
+}
+
+
+penser à utiliser la combinaison de selecteurs au lieu de créer plein de classe et plein d'ID*/
+
+body{
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+p{
+  color: #8f8f8f;
+  font-family: "ubuntu";
+  font-size: 1.3rem;
+}
+
+.big-heading{
+  font-size: 3.5rem;
+  line-height : 1.5;
+}
+
+#title {
+  text-align: left;
+}
+
+.container-fluid{
+  padding: 3% 15% 7%;
+}
+
+
+
+/* sections */
+
+ .colored-section{
+   background-color: #ff4c68;
+   color: #fff;
+ }
+
+ .white-section{
+  background-color: #fff;
+ }
+
+
+
+
+  /* Navigation bar  */
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0px 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+
+
+
+/* Download buttons */
+
+.download-button{
+  margin : 5% 3% 5% 0;
+}
+
+
+
+
+/* Title Image  */
+
+.Title-img{
+  width: 16.5%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 23%;
+}
+
+
+
+
+/* Feature section */
+
+#features {
+  padding: 7% 15%;
+  position: relative;
+}
+
+.feature-title{
+  font-size: 1.7rem;
+}
+
+.feature-box{
+  padding: 5%;
+}
+
+
+.icon{
+  color : #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+
+
+
+
+/* Testimonials  */
+
+
+.testim-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+
+
+
+/* press */
+
+#press {
+    padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 6%;
+  margin : 20px 20px 50px ;
+}
+
+
+
+
+
+
+/* princing  */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column{
+  padding: 5% 3%;
+}
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#pricing .big-heading{
+  /* ici on cherche un élément avec une classe big-heading contenu dans un ID pricing  */
+  text-decoration: underline;
+}
+
+/* #pricing.big-heading différent car là on cherche un élément html qui a un id pricing et une classe big-heading */
+
+
+
+
+
+
+
+/* cta section */
+
+#cta{
+  padding: 7% 15%;
+}
+
+
+
+
+
+
+/* footer section */
+
+#footer{
+    padding: 7% 15%;
+}
+
+.social-icon{
+  margin: 20px 10px;
+}
+
+
+
+
+
+/* dès que l'écran passe en dessous de 1000 px -> on fait les commandes ci dessous: */
+
+@media (max-width: 1000px) {
+  #title{
+    text-align: center;
+  }
+
+  .Title-img{
+    position: static;
+    transform: rotate(0);
+    width: 20%;
+}
+}
